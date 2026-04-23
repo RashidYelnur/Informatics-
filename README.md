@@ -59,7 +59,7 @@ int main() {
 
 
 3.
-•про formula.length и string (строка), vector (список), map (словарь).formula.length это итак встроенная программа,также она работает только на умные элементы(vector, map(formula.size) и string(formula.lenth) а на турые(int,char) не работает
+•про formula.length и string (строка), vector (список), map (словарь).formula.length это итак встроенная программа,также она работает только на умные элементы(vector, map(formula.size) и string(formula.lenth) а на турые(int,char,double,float) не работает
 
 
 
@@ -71,3 +71,28 @@ int main() {
 
 5.
 •про (минус 1, так как мы уже добавили 1 атом)
+
+Формула с cin
+(практика)
+
+map<string, double>masses ={
+{'H',1.008}, {'O',15.999}, {'C',12.011}, {'N',14.007}, {'S', 32.06}, {'Cl', 35.45}
+};
+string formula; 
+cin>>formula;
+
+double total_mass=0;
+string last_element="";
+for(int i=0;i<formula.length();i++){
+char c=formula[i];
+if(c>='A',c<='Z'){
+last element=string[1,c];
+total_mass=total_mass+masses[last_element];
+}
+else if(c>='0',c<='9'){
+ int s=c-'0';
+ double obshaya_massa=masses[last_element]*(s-1);
+total_mass=total_mass+obshaya_massa;
+}}
+cout<< "Общая масса равна: "<<total_mass; 
+
