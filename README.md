@@ -59,7 +59,7 @@ int main() {
 
 
 3.
-•про formula.length и string (строка), vector (список), map (словарь).
+•про formula.length и string (строка), vector (список), map (словарь).formula.length это итак встроенная программа,также она работает только на умные элементы(vector, map(formula.size) и string(formula.lenth) а на турые(int,char) не работает
 
 
 
