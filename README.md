@@ -83,7 +83,7 @@ using namespace std;
 
 int main() {
 map<string, double>masses ={
-{"H",1.008}, {"O",15.999}, {"C",12.011}, {"N",14.007}, {"S", 32.06}, {"Cl", 35.45}
+{"H",1.008}, {"O",15.999}, {"C",12.011}, {"N",14.007}, {"S", 32.06}, {"F", 19.998}
 };
 string formula; 
 cin>>formula;
@@ -93,7 +93,7 @@ string last_element="";
 for(int i=0;i<formula.length();i++){
 char c=formula[i];
 if(c>='A',c<='Z'){
-last element=string(1,c);
+last_element=string(1,c);
 total_mass=total_mass+masses[last_element];
 }
 else if(c>='0',c<='9'){
