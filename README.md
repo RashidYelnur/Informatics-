@@ -75,6 +75,13 @@ int main() {
 Формула с cin
 (практика)
 
+#include <iostream>
+#include <string>
+#include <map>
+
+using namespace std;
+
+int main() {
 map<string, double>masses ={
 {"H",1.008}, {"O",15.999}, {"C",12.011}, {"N",14.007}, {"S", 32.06}, {"Cl", 35.45}
 };
@@ -95,4 +102,5 @@ else if(c>='0',c<='9'){
 total_mass=total_mass+obshaya_massa;
 }}
 cout<< "Общая масса равна: "<<total_mass; 
+}
 
